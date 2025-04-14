@@ -33,7 +33,10 @@ Returns the top 30 most similar anime.
 Searches and ranks anime based on genres.
 
 Filters by highest rating × popularity (score * favorites).
-
+---
+## Screenshots
+![Screenshot (346)](https://github.com/user-attachments/assets/44555e5a-f3cd-4051-a7f5-6bfe365f8e8e)
+![Screenshot (347)](https://github.com/user-attachments/assets/f3c770e3-3d2b-4aea-aec8-b5e4bcbff5a1)
 
 ---
 
@@ -45,15 +48,3 @@ Filters by highest rating × popularity (score * favorites).
    cd Anime-Recommender-System
 ---
 
-├── app.py
-├── cleaned_data.csv
-├── similarity.pkl
-├── requirements.txt
-├── templates/
-│   ├── index.html
-│   ├── recommender.html
-│   ├── recommed_anime.html
-│   └── recommed_by_genres.html
-└── static/
-    └── style.css
----
