@@ -16,7 +16,9 @@ A web-based Anime Recommender System built with **Flask**, **HTML/CSS**, and pow
 
 ## 🎥 Demo Video
 
-📺 [Watch the Demo](https://www.youtube.com/watch?v=https://youtu.be/KSBvmw9icLA)  
+📺 [Watch the Demo](https://www.youtube.com/watch?v=https://youtu.be/KSBvmw9icLA)
+
+  
 > A quick walkthrough of the features and how to use the web app
 
 ---
