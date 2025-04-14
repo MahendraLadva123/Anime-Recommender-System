@@ -14,15 +14,6 @@ A web-based Anime Recommender System built with **Flask**, **HTML/CSS**, and pow
 
 ---
 
-## 🎥 Demo Video
-
-📺 [Watch the Demo](https://www.youtube.com/watch?v=https://youtu.be/KSBvmw9icLA)
-
-  
-> A quick walkthrough of the features and how to use the web app
-
----
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: HTML, CSS, Bootstrap
@@ -30,6 +21,19 @@ A web-based Anime Recommender System built with **Flask**, **HTML/CSS**, and pow
 - **Data**: Cleaned MyAnimeList dataset + Jikan API
 - **Storage**: Git Large File Storage (Git LFS) for similarity matrix (or download manually)
 - **Deployment**: Localhost (or can use Render/Heroku/Vercel for hosting)
+
+---
+## 🧑‍💻 How It Works
+🔁 1. Content-Based Recommendation
+Calculates similarity between anime titles using a cosine similarity matrix.
+
+Returns the top 30 most similar anime.
+
+## 🎭 2. Genre-Based Recommendation
+Searches and ranks anime based on genres.
+
+Filters by highest rating × popularity (score * favorites).
+
 
 ---
 
