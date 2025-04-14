@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Recommendation</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+            background-color: #000000;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 280px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        .result {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .anime-card {
+            width: 180px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s;
+        }
+
+        .anime-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .anime-card img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .anime-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .anime-title {
+            font-weight: bold;
+            font-size: 15px;
+            color: #222;
+            margin-bottom: 6px;
+        }
+
+        .anime-detail {
+            font-size: 13px;
+            color: #666;
+        }
+        .back-link {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="/recommender" class="back-link mt-4 d-inline-block">← Back to Home</a>
+
+    <h1>Anime Recommendations by Genre</h1>
+
+    <form method="post">
+        <input type="text" name="anime_name" placeholder="Enter genre like action, romance, etc.">
+        <button type="submit">Search</button>
+    </form>
+
+    <div class="result">
+        {% for anime in result %}
+        <a href="/anime/{{ anime[0] }}" class="back-link text-decoration-none">
+        <div class="anime-card">
+            <img src="{{ anime[3] }}" alt="{{ anime[1] }}">
+            <div class="anime-info">
+                <div class="anime-title">{{ anime[1] }}</div>
+                <div class="anime-detail">Score: {{ anime[2] }}</div>
+            </div>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
