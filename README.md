@@ -43,3 +43,17 @@ Filters by highest rating × popularity (score * favorites).
    ```bash
    git clone https://github.com/MahendraLadva123/Anime-Recommender-System.git
    cd Anime-Recommender-System
+---
+
+├── app.py
+├── cleaned_data.csv
+├── similarity.pkl
+├── requirements.txt
+├── templates/
+│   ├── index.html
+│   ├── recommender.html
+│   ├── recommed_anime.html
+│   └── recommed_by_genres.html
+└── static/
+    └── style.css
+---
